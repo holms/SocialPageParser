@@ -1,0 +1,7 @@
+simplejson
+requests
+rethinkdb
+gunicorn
+falcon
+
+git+https://github.com/pythonforfacebook/facebook-sdk.git#egg=facebook-sdk
