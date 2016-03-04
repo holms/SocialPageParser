@@ -1,4 +1,10 @@
-# Docker environment for lion-api
+# Docker environment for SocialPageParser
+
+## Project description
+
+This is just a backend and frontend for small project, which parser specified facebook pages for events and posts.
+Main purpose is to have dashboard which gonna show you latest events of your favorite pages, also as filtering certain posts, let's say articles and videos or musical posts like soundcloud widgets for example.
+
 
 ## Terminology
 
