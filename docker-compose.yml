@@ -1,0 +1,12 @@
+falcon:
+    build: ./containers/back
+    command: gunicorn -b 0.0.0.0:8002 app:api
+    ports:
+        - 8002:8002
+    volumes:
+        - ./containers/back:/var/www/project
+    links:
+        - rethinkdb
+
+rethinkdb:
+    image: rethinkdb
