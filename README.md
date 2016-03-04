@@ -25,7 +25,7 @@ Or try [docker-toolbox](https://www.docker.com/toolbox) should work for mac and 
 Clone project to this repo root
 
 ```
-git clone git@github.com:mr813/zohointegration.git zohoint
+git clone git@github.com:holms/SocialPageParser.git zohoint
 ```
 
 ### Setup docker
