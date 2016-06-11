@@ -1,3 +1,8 @@
+rethinkdb:
+    image: rethinkdb
+    ports:
+        - "8080:8080"
+
 falcon:
     build: ./containers/back
     command: gunicorn --reload -b 0.0.0.0:8002 app:api
@@ -8,5 +13,3 @@ falcon:
     links:
         - rethinkdb
 
-rethinkdb:
-    image: rethinkdb
