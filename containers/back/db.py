@@ -17,14 +17,15 @@ class db:
 
     def create_tables(self):
         """Create tables"""
+
         try:
             rdb.connect(self.host, \
                self.port).repl()
 
             for table in self.tables:
-                rdb.db(self.db)\
-                  .table_create(table)\
-                  .run()
+                if not rdb.db(self.db).table_list().contains(table).run():
+                        rdb.db(self.db).table_create(table).run()
+
         except Exception as e:
             sys.exit(str(e))
 
