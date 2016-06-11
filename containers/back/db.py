@@ -1,7 +1,9 @@
+import sys
 import rethinkdb as rdb
 from datetime import datetime
 
 import config
+
 
 class db:
 
@@ -21,7 +23,7 @@ class db:
 
             for table in self.tables:
                 rdb.db(self.db)\
-                  .tableCreate(table)\
+                  .table_create(table)\
                   .run()
         except Exception as e:
             sys.exit(str(e))
