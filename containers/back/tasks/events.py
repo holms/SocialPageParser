@@ -35,7 +35,7 @@ class fb_event_collect:
 
     def save_event(self, data):
         """Save event to database"""
-        rdb.table(self.rdb_table).insert([])
+        rdb.table(self.rdb_table).insert(data)
 
 
     def get_events(self):
