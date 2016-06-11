@@ -1,7 +1,5 @@
-FROM holms/jessie:py3-latest
+FROM python:3.5.1-alpine
 ADD . /var/www/project
 WORKDIR /var/www/project
-RUN apt-get update && apt-get install -y \
-    git \
-    && rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache git
 RUN pip install --no-cache-dir -r requirements.txt
