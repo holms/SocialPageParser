@@ -3,5 +3,6 @@ requests
 rethinkdb
 gunicorn
 falcon
-
+nose
+mock
 git+https://github.com/pythonforfacebook/facebook-sdk.git#egg=facebook-sdk
